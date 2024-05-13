@@ -9,9 +9,6 @@ use Code16\OzuClient\Support\Database\OzuSeeder;
 
 class DatabaseSeeder extends OzuSeeder
 {
-    /**
-     * Seed the application's database.
-     */
     public function run(): void
     {
         $this->clearMediaDirectory();

@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Code16\OzuClient\Eloquent\IsOzuModel;
 use Code16\OzuClient\Eloquent\OzuModel;
 use Code16\OzuClient\Eloquent\Media;
 use Code16\OzuClient\OzuCms\Form\OzuField;
@@ -10,19 +11,24 @@ use Code16\OzuClient\OzuCms\OzuCollectionListConfig;
 use Code16\OzuClient\OzuCms\OzuCollectionConfig;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Code16\OzuClient\OzuCms\List\OzuColumn;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 
-class Project extends OzuModel
+class Project extends Model
 {
     use HasFactory;
+    use IsOzuModel;
 
-    protected array $ozuCustomAttributes = [
-        'place',
-        'year',
-        'date'
-    ];
+    public static function getOzuCustomAttributes(): array
+    {
+        return [
+            'place',
+            'year',
+            'date'
+        ];
+    }
 
     public function visuals(): MorphMany
     {

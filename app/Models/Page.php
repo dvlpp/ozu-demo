@@ -2,21 +2,26 @@
 
 namespace App\Models;
 
-use Code16\OzuClient\Eloquent\OzuModel;
+use Code16\OzuClient\Eloquent\IsOzuModel;
 use Code16\OzuClient\OzuCms\Form\OzuField;
 use Code16\OzuClient\OzuCms\OzuCollectionFormConfig;
 use Code16\OzuClient\OzuCms\OzuCollectionListConfig;
 use Code16\OzuClient\OzuCms\OzuCollectionConfig;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Code16\OzuClient\OzuCms\List\OzuColumn;
+use Illuminate\Database\Eloquent\Model;
 
-class Page extends OzuModel
+class Page extends Model
 {
     use HasFactory;
+    use IsOzuModel;
 
-    protected array $ozuCustomAttributes = [
-        'key',
-    ];
+    public static function getOzuCustomAttributes(): array
+    {
+        return [
+            'key'
+        ];
+    }
 
     public static function configureOzuCollection(OzuCollectionConfig $config): OzuCollectionConfig
     {

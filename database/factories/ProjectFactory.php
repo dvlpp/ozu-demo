@@ -16,8 +16,6 @@ class ProjectFactory extends Factory
             'content' => collect(range(3, 7))
                 ->map(fn ($paragraph) => '<p>'.fake()->paragraph(5).'</p>')
                 ->implode(''),
-//                'reference' => fake()->numerify('##-###'),
-//                'year' => fake()->numberBetween(2000, 2024)
         ];
     }
 }
