@@ -3,7 +3,6 @@
 namespace App\Models;
 
 use Code16\OzuClient\Eloquent\IsOzuModel;
-use Code16\OzuClient\Eloquent\OzuModel;
 use Code16\OzuClient\Eloquent\Media;
 use Code16\OzuClient\OzuCms\Form\OzuField;
 use Code16\OzuClient\OzuCms\OzuCollectionFormConfig;
@@ -20,15 +19,6 @@ class Project extends Model
 {
     use HasFactory;
     use IsOzuModel;
-
-    public static function getOzuCustomAttributes(): array
-    {
-        return [
-            'place',
-            'year',
-            'date'
-        ];
-    }
 
     public function visuals(): MorphMany
     {

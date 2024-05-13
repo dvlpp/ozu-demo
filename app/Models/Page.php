@@ -16,13 +16,6 @@ class Page extends Model
     use HasFactory;
     use IsOzuModel;
 
-    public static function getOzuCustomAttributes(): array
-    {
-        return [
-            'key'
-        ];
-    }
-
     public static function configureOzuCollection(OzuCollectionConfig $config): OzuCollectionConfig
     {
         return $config
