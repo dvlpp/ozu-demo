@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="pt-4 xl:pt-8">
-                <x-link href="{{ route('projects.index', absolute: false) }}">
+                <x-link href="{{ route('projects.index') }}">
                     ← Back to projects
                 </x-link>
             </div>
