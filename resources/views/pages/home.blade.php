@@ -3,11 +3,11 @@
 <x-layout>
 
     <div class="relative flex items-center overflow-hidden p-12">
-        <img class="absolute inset-0 w-full h-full object-cover" src="{{ asset('/img/hero.jpg') }}" role="presentation" alt="Ozu, an Ozu demo project">
+        <img class="absolute inset-0 w-full h-full object-cover" src="{{ $page->cover?->thumbnail(1024) }}" role="presentation" alt="Ozu Demo project">
         <div class="absolute inset-0 from-black/30 to-black/0  bg-gradient-to-r"></div>
         <div class="absolute inset-0 from-black/40 to-black/0  bg-gradient-to-r"></div>
         <div class="relative text-4xl sm:text-6xl xl:text-8xl uppercase font-bold text-white py-12">
-            The best<br>Monkey<br>in town
+            {!! $page->content !!}
         </div>
     </div>
 
@@ -17,37 +17,37 @@
                 <x-slot:icon>
                     <x-icon-monkey-1 class="w-6 h-6"></x-icon-monkey-1>
                 </x-slot:icon>
-                We get stuff done
+                Jocko is the best monkey
             </x-kpi>
             <x-kpi>
                 <x-slot:icon>
                     <x-icon-monkey-2 class="w-6 h-6"></x-icon-monkey-2>
                 </x-slot:icon>
-                We can go on forever
+                Jocko can run fast
             </x-kpi>
             <x-kpi>
                 <x-slot:icon>
                     <x-icon-monkey-3 class="w-6 h-6"></x-icon-monkey-3>
                 </x-slot:icon>
-                And we do this also
+                Jocko can jump high
             </x-kpi>
             <x-kpi>
                 <x-slot:icon>
                     <x-icon-monkey-4 class="w-6 h-6"></x-icon-monkey-4>
                 </x-slot:icon>
-                This is not the last item
+                Jocko can swim
             </x-kpi>
             <x-kpi>
                 <x-slot:icon>
                     <x-icon-monkey-5 class="w-6 h-6"></x-icon-monkey-5>
                 </x-slot:icon>
-                And even this
+                Jocko can fly
             </x-kpi>
             <x-kpi>
                 <x-slot:icon>
                     <x-icon-monkey-7 class="w-6 h-6"></x-icon-monkey-7>
                 </x-slot:icon>
-                Ok I think we are done
+                Jocko can code
             </x-kpi>
         </div>
     </x-section>

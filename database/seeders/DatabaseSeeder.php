@@ -13,10 +13,13 @@ class DatabaseSeeder extends OzuSeeder
     {
         $this->clearMediaDirectory();
 
-        Page::factory()->create([
-            'title' => 'Home',
-            'key' => 'home',
-        ]);
+        Page::factory()
+            ->has(Media::factory()->image('cover')->withFile(), 'cover')
+            ->create([
+                'title' => 'Homepage',
+                'key' => 'home',
+                'content' => "<p>The best</p><p>Monkey</p><p>in town</p>",
+            ]);
 
         Page::factory()->create([
             'title' => 'Contact',
