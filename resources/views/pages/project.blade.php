@@ -41,7 +41,9 @@
             </div>
         </x-slot:aside>
 
-        {!! $project->content !!}
+        <div class="content mt-6">
+            {!! $project->content !!}
+        </div>
 
         @if(count($project->visuals))
             <div class="mt-12">
