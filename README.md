@@ -1,5 +1,5 @@
 # Ozu Demo project
 
-This is a demo project for [Ozu](https://ozu.code16.fr).
+This repo is a demo project for [Ozu](https://ozu.code16.fr), only useful to show how to use Ozu. Static "production" website: https://ozu-demo.netlify.app (data was generated / handled by Ozu CMS feature).
 
-Static production website: https://fancy-smakager-04df5a.netlify.app
+![Ozu](public/img/ozu.jpg)
