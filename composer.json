@@ -8,7 +8,7 @@
         "php": "^8.2",
         "blade-ui-kit/blade-icons": "^1.6",
         "laravel/framework": "^11.0",
-        "code16/ozu-client": "dev-main",
+        "code16/ozu-client": "0.*",
         "laravel/tinker": "^2.9"
     },
     "require-dev": {
