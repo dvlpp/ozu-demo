@@ -14,12 +14,6 @@ class AppServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        Relation::enforceMorphMap(
-            collect(config('ozu-client.collections'))
-                ->mapWithKeys(fn (string $collectionClass) => [
-                    app($collectionClass)->ozuCollectionKey() => $collectionClass,
-                ])
-                ->toArray()
-        );
+        //
     }
 }
