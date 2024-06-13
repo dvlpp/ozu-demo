@@ -282,16 +282,16 @@
         },
         {
             "name": "code16/ozu-client",
-            "version": "v0.3.4",
+            "version": "v0.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/code16/ozu-client.git",
-                "reference": "33f361233106b7b0932f7e3b6418534d236729b8"
+                "reference": "690c3c994bbc1fce4b68b1b91e4943404eb36ab9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/code16/ozu-client/zipball/33f361233106b7b0932f7e3b6418534d236729b8",
-                "reference": "33f361233106b7b0932f7e3b6418534d236729b8",
+                "url": "https://api.github.com/repos/code16/ozu-client/zipball/690c3c994bbc1fce4b68b1b91e4943404eb36ab9",
+                "reference": "690c3c994bbc1fce4b68b1b91e4943404eb36ab9",
                 "shasum": ""
             },
             "require": {
@@ -370,9 +370,9 @@
                 "ozu-client"
             ],
             "support": {
-                "source": "https://github.com/code16/ozu-client/tree/v0.3.4"
+                "source": "https://github.com/code16/ozu-client/tree/v0.3.5"
             },
-            "time": "2024-06-13T07:24:42+00:00"
+            "time": "2024-06-13T07:40:42+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
