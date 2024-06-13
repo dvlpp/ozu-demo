@@ -12,7 +12,7 @@ Route::get('/', HomePageController::class)
 Route::get('/projects/all/{page?}', [ProjectController::class, 'index'])
     ->name('projects.index');
 
-Route::get('/projects/{project}', [ProjectController::class, 'show'])
+Route::get('/projects/{project:slug}', [ProjectController::class, 'show'])
     ->name('projects.show');
 
 Route::get('/about', AboutPageController::class)
