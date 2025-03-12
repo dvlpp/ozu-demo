@@ -1,11 +1,8 @@
 {
-    "name": "laravel/laravel",
+    "name": "code16/ozu-demo",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
-    "license": "MIT",
     "require": {
-        "php": "^8.2",
+        "php": "^8.4",
         "blade-ui-kit/blade-icons": "^1.6",
         "laravel/framework": "^11.0",
         "code16/ozu-client": "0.*",
